@@ -1483,6 +1483,23 @@
 
   <profiles>
     <profile>
+      <id>armedia</id>
+      <activation>
+        <property>
+          <!-- Activates when this property is NOT defined -->
+          <name>!disable.armedia.build</name>
+        </property>
+      </activation>
+      <properties>
+        <distMgmtReleasesId>arkcase.thirdparty</distMgmtReleasesId>
+        <distMgmtReleasesName>ArkCase Third Party Libraries</distMgmtReleasesName>
+        <distMgmtReleasesUrl>https://nexus.armedia.com/repository/arkcase.thirdparty</distMgmtReleasesUrl>
+        <distMgmtSnapshotsId>${distMgmtReleasesId}</distMgmtSnapshotsId>
+        <distMgmtSnapshotsName>${distMgmtReleasesName}</distMgmtSnapshotsName>
+        <distMgmtSnapshotsUrl>${distMgmtReleasesUrl}</distMgmtSnapshotsUrl>
+      </properties>
+    </profile>
+    <profile>
       <id>pedantic</id>
       <build>
         <plugins>
