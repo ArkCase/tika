@@ -29,10 +29,6 @@
     <relativePath>tika-parent/pom.xml</relativePath>
   </parent>
 
-  <properties>
-    <revision>3.3.2</revision>
-  </properties>
-
   <artifactId>tika</artifactId>
   <packaging>pom</packaging>
   <name>Apache Tika</name>
